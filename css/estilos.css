@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)), url(/imagenes/fondo.jpg);
+}
+
+
+/*header - parte principal */
+
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 0;
+    height: 10rem;
+
+
+}
+
+
+
+
+.tituloPrincipal {
+    text-decoration: none;
+    color: beige;
+
+}
+
+.tituloPrincipal i {
+    font-size: 4rem;
+    color: darkorchid;
+
+}
+
+.tituloPrincipal h1 {
+    display: inline-block;
+    font-size: 5rem;
+    color: chartreuse;
+    font-weight: 500;
+}
+
+/*parte de los enlaces a las otras pestañas*/
+ul {
+    display: flex;
+    list-style: none;
+
+}
+
+li {
+    margin-right: 3rem;
+
+}
+
+li a {
+
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 3rem;
+    display: inline;
+    transition: .5s;
+    overflow: hidden;
+
+}
+
+
+li a:hover {
+    background-color: aquamarine;
+    color: #050801;
+    box-shadow: 0 0 5px aquamarine,
+        0 0 25px aquamarine,
+        0 0 50px aquamarine,
+        0 0 200px aquamarine;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+/*parte de pestaya contacto*/
+.box-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-info>h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+.data>p {
+    font-size: 1rem;
+}
+
+.data>p>i {
+    color: darkorchid;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links>a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: darkorchid;
+    text-align: center;
+    transition: .1s;
+}
+
+.links>a>i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box>input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(255 255 255 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+
+}
+
+.input-box>input::placeholder,
+.input-box>textarea::placeholder {
+    color: #a3a3a3;
+
+}
+
+.input-box>input:focus::placeholder,
+.input-box>textarea:focus::placeholder {
+    color: transparent;
+}
+
+.input-box>input:focus,
+.input-box>textarea:focus {
+    border-bottom: 3px solid darkorchid;
+    animation: shake .2s;
+}
+
+.input-box>textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition: .3s;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box>i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box>input:focus~i {
+    color: aquamarine;
+}
+
+form>button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: darkorchid;
+    color: #fff;
+    border: none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form>button:hover,
+.links>a:hover {
+    background: rgb(153, 50, 204);
+}
+
+
+/*fin pestaña contacto*/
+
+.videoResponsive {
+    flex: auto;
+}
+
+/*pestaña review code video*/
+
+
+
+
+
+/*fin pestaña review*/
+
+
+
+/*boton de descargar pestaña descargar*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 150vh;
+}
+
+.enlaceBoton {
+    text-decoration: none;
+    position: absolute;
+    display: inline;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: aquamarine;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 70px;
+}
+
+.enlaceBoton:hover {
+    background-color: aquamarine;
+    color: #050801;
+    box-shadow: 0 0 5px aquamarine,
+        0 0 25px aquamarine,
+        0 0 50px aquamarine,
+        0 0 200px aquamarine;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+}
+
+/*fin pestaña descarga boton*/
+
+/*hero*/
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: inline-block;
+    color: rgb(110, 110, 233);
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+
+.hero h2 span {
+    font-weight: 700;
+    padding: 0 5px;
+    position: relative;
+}
+
+/*galeria*/
+
+
+.introGaleria {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introGaleria h2 {
+    color: gold;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.imagenGaleeria {
+    border-radius: 1rem;
+    padding: 0.4rem;
+    max-width: 100%;
+    filter: grayscale(50%)
+}
+
+
+
+/*responsive-medias queries*/
+
+
+
+
+@media (max-width:981px) {
+    .imagenGaleeria {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .box-info {
+        gap: 15px;
+    }
+
+    .box-info>h1 {
+        font-size: 1.5rem;
+    }
+
+
+}
