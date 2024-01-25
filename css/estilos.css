@@ -43,11 +43,11 @@ body {
     color: darkorchid;
 
 }
-
-.tituloPrincipal h1 {
+/*poner el logo a ca*/
+.tituloPrincipal {
     display: inline-block;
     font-size: 5rem;
-    color: chartreuse;
+   
     font-weight: 500;
 }
 
@@ -55,6 +55,11 @@ body {
 ul {
     display: flex;
     list-style: none;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 
 }
 
@@ -85,7 +90,7 @@ li a:hover {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-/*parte de pestaya contacto*/
+/*parte de pestaña contacto*/
 .box-info {
     color: #fff;
     display: flex;
@@ -96,12 +101,13 @@ li a:hover {
 .box-info>h1 {
     text-align: left;
     letter-spacing: 5px;
+    color: aquamarine;
 }
 
 .data {
     display: flex;
     flex-direction: column;
-    gap: 25px
+    gap: 25px;
 }
 
 .data>p {
@@ -228,6 +234,7 @@ form>button:hover,
     flex: auto;
 }
 
+
 /*pestaña review code video*/
 
 
@@ -235,6 +242,7 @@ form>button:hover,
 
 
 /*fin pestaña review*/
+
 
 
 
@@ -274,6 +282,26 @@ form>button:hover,
 
 /*fin pestaña descarga boton*/
 
+/*comienzo footer*/
+
+footer{
+    background: #000000;
+    height: auto;
+
+    color:aquamarine;
+
+}
+
+
+
+
+
+
+
+
+
+/*fin footer*/
+
 /*hero*/
 
 .hero {
@@ -283,13 +311,13 @@ form>button:hover,
     color: rgb(110, 110, 233);
 }
 
-.hero h2 {
+.hero h1 {
     margin-bottom: 1rem;
     font-size: 3.8rem;
     font-weight: 500;
 }
 
-.hero h2 span {
+.hero h1 span {
     font-weight: 700;
     padding: 0 5px;
     position: relative;
@@ -348,6 +376,9 @@ form>button:hover,
     .box-info>h1 {
         font-size: 1.5rem;
     }
+
+
+  
 
 
 }
