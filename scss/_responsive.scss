@@ -1,0 +1,20 @@
+@media (max-width: 981px) {
+    .imagenGaleeria {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-info {
+        gap: 15px;
+
+        >h1 {
+            font-size: 1.5rem;
+        }
+    }
+}

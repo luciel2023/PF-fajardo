@@ -1,0 +1,18 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    display: inline-block;
+    color: $color-lila;
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3.8rem;
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+            padding: 0 5px;
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-right: 3rem;
+
+    a {
+        text-decoration: none;
+        color: $color-aqua;
+        font-size: 3rem;
+        display: inline;
+        transition: .5s;
+        overflow: hidden;
+
+        &:hover {
+            background-color: $color-aqua;
+            color: #050801;
+            box-shadow: 0 0 5px aquamarine, 0 0 25px aquamarine, 0 0 50px aquamarine, 0 0 200px aquamarine;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        }
+    }
+}
